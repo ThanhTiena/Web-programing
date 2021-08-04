@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Exercise - 1</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div {
+			margin-bottom: 40px;
+			padding: 40px;
+			border: 1px solid #ccc;
+			border-radius: 8px;
+		}
+		img {
+			max-width: 300px;
+		}
+		.section_2, .section_3, .section_4, .section_5, .section_6{
+			margin-right: 200px;
+			margin-left: 200px;
+			margin-bottom: 150px;
+		}
+		.section_1{
+			background-color: lightgreen;
+			padding-bottom: 500px;
+		}
+		.section_2 {
+			display: flex;
+		}
+		.section_3, .section_4{
+			display: block;
+		}
+		.section_5{
+			background-color: lightgreen;
+			display: inline-flex;
+		}
+		.section_7, .section_8, .section_9{
+			color: white;
+			margin-left: 40px;
+			width: 30%;
+			margin-bottom: 15px;
+			padding: 10px 10px;
+		}
+		.menu{
+			margin: auto;
+		}
+		.nav_menu{
+			border: 5px solid transparent;
+			font-size: 17px;
+			font-weight: bolder;
+			color: white;
+			display: flex;
+			justify-content: space-around;
+		}
+		.nav_item{
+			padding: 30px 0;
+		}
+		.nav_news{
+			display: block;
+			margin-left:0 ;
+			padding: 2px 9px;
+		}
+		.intro{
+			margin-right: 30px;
+			line-height: 25px;
+		}
+		.service{
+			display: flex;
+		}
+		.comp{
+			font-weight:bolder;
+			font-size: 20px;
+			line-height: 2px;s
+		}
+		.building, .sales{
+			display: inline-flex;
+		}
+		#ser11, #ser12, #ser13,#ser21, #ser22, #ser23{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			text-align: center;
+			width: 90%;
+			display: block;
+			border: none;
+			padding: 5px 2px;
+			margin-right: 40px;
+			margin-bottom: 40px;
+		}
+		#houses, #factories, #destroy, #installment, #discuss, #design, #customerCares, #salesOfDevices{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			text-align: center;
+			width: 40%;
+			display: block;
+			padding: 30px 10px;
+			margin-right: 40px;
+			margin-bottom: 40px;
+		}
+		.type_golf{
+			background-color: grey;
+			font-size:x-small;
+			width: 25.5%;
+			padding: 2px 3px;
+			color: white;
+		}
+		.advertise{
+			align-content: center;
+			color: white;
+			margin-right: 40px;
+			width: 40%;
+		}
+		.form{
+			margin-left: 100px;
+			padding: 30px 30px;
+			border: none;
+			border-radius: 10px;
+			background-color: lightgrey;
+			display: block;
+		}
+		input[type=text],input[type=submit], textarea{
+			width: 100%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+			display: inline-block;
+			border: none;
+			border-radius: 20px;
+			box-sizing: border-box;
+		}
+		input[value="GỬI"], input[type=submit]{
+			font-weight: bolder;
+			color: white;
+			background-color: green;
+			border: none;
+		}
+		.news{
+			display: inline-flex;
+		}
+		.news_1, .news_2{
+			border: 2px solid green;
+			margin-right: 30px;
+			padding: 30px 40px;
+		}
+		#subNews_1, #subNews_2, #subNews_3{
+			display: inline-block;
+			line-height: 20px;
+			width: 70%;
+		}
+		.endPage{
+			border-color: grey;
+			display: inline-flex;
+			width: 95%;
+			background-color: black;
+			padding: 40px 40px;
+		}
+		.nav_news_item{
+			border-bottom:2px solid grey;
+			padding: 10px 0;
+		}
+	</style>
+</head>
+<body>
+	<!-- Block 1 -->
+	<div class="section_1">
+		<p class="menu">
+			<ul type="none" class="nav_menu">
+				<img src="images/logo.png" style="margin-right: 20px;">
+				<li class="nav_item" style="background-color: Darkgreen;"><a href="home.html" style="color:white;">TRANG CHỦ</a></li>
+				<li class="nav_item">DỊCH VỤ GOLF</li>
+				<li class="nav_item">DỊCH VỤ KHÁC</li>
+				<li class="nav_item">TIN TỨC</li>
+				<li class="nav_item">CÔNG TRÌNH</li>
+				<li class="nav_item">GIỚI THIỆU</li>
+				<li class="nav_item">LIÊN HỆ</li>
+				<li class="nav_item">TIẾNG VIỆT</li>
+			</ul>
+		</p>
+	</div>
+	<!-- Block 2 -->
+	<div class="section_2">
+		<span class="intro">
+			<b style="font-size: 20px;">Chúng tôi là ai?</b>
+			<p style="color:darkgreen; font-size: 30px; font-weight: bolder;"> Công ty LANI & DANI</p>
+			<p align="justify"><b>Tự hào là công ty đầu tiên tại Việt Nam cung cấp dịch vụ trọn gói</b> trong lĩnh vực tư vấn, thiết kế, xây dựng sân Golf, cung ứng nguồn lực, dịch vụ huấn luyện, quản lý và hậu cần cho dịch vụ Golf.</p>
+			<p align="justify">Chúng tôi còn hoạt động trong lĩnh vự xây lắp và đầu tư xây dựng các công trình dân dụng, nhà xưởng công nghiệp, công trình hạ tầng kĩ thuật, đường giao thông, cầu cảng, bờ kè, cầu cống, nạo vét sông rạch, xây dựng các công trình thủy lợi, thi công san lấp mặt bằng, sản xuất và kinh doanh vật liệu xây dựng.</p>
+		</span>
+		<img src="images/introduction-gilf.jpg" style="margin-top: 50px; margin-right: 20px;">
+		<img src="images/introduction-man.jpg" style="margin-bottom: 50px;">
+	</div>
+	<!-- Block 3 -->
+	<div class="section_3">
+		<!-- Your HTML code -->
+		<span align="center">
+			<p style="color: darkgreen; font-weight: bold; font-size:20px;">Chuyên gia hàng đầu</p>
+			<p style="font-weight: bold; font-size:50px;">Dịch Vụ Sân Golf</p>
+			<p style="border-top: 5px solid green; margin: auto; width: 100px;"></p>
+			<p style="padding: 5px 20px; margin-bottom: 20px;">Với đội ngũ thiết kế và xây dựng chuyên nghiệp, <b>Lani & Dani </b>đảm bảo sẽ mang lại những sân golf chất lượng cao, đầy thú vị và thử thách phù hợp cho các golf thủ ở tất cả các mức kỹ năng.</p>
+		</span>
+		<span class="service">
+			<span class="server_1">
+				<span id="ser11">
+					<img src="images/service-design.jpg">
+					<p id="comp">Thiết Kế</p>
+					<p>Đội ngữ thiết kế sân golf hơn 10 năm kinh nghiệm, thi công đạt tiêu chuẩn quốc tế.</p>
+				</span>
+				<span id="ser21">
+					<img src="images/service-maintenance.jpg">
+					<p id="comp">Chăm Sóc Bảo Dưỡng</p>
+					<p>Giúp quá trình sử dụng sân golf luôn đạt tiêu chuẩn kĩ thuật cao nhất.</p>
+				</span>
+			</span>
+			<span class="server_2">
+				<span id="ser12">
+					<img src="images/service-construction.jpg">
+					<p id="comp">Xây Dựng</p>
+					<p>Là đơn vị đứng đầu về Thiết kế Thi công sân Golf chuyên nghiệp trên Toàn quốc.</p>
+				</span>
+				<span id="ser22">
+					<img src="images/service-training.jpg">
+					<p id="comp">Huấn Luyện</p>
+					<p>Cung cấp bài học golf từ các chuyên gia quốc tế có trình độ cao, giàu kinh nghiệm.</p>
+				</span>
+			</span>
+			<span class="server_3">
+				<span id="ser13">
+					<img src="images/service-operation.jpg">
+					<p id="comp">Vận Hành</p>
+					<p>Quản lý, điều hành, vận hành các hành động kinh doanh hàng ngày của sân golf.</p>
+				</span>
+					<span id="ser23">
+					<img src="images/service-lawn-care.jpg">
+					<p id="comp">Chăm Sóc Cỏ</p>
+					<p>Tiến hành xử lý cỏ dại kế hợp áp dụng các kỹ thuật chăm sóc cỏ sân golf khoa học</p>
+				</span>
+			</span>
+		</span>
+	</div>
+
+	<!-- Block 4 -->
+	<div class="section_4">
+		<!-- Your HTML code -->
+		<span align="center">
+			<p style="color: darkgreen; font-weight: bold;font-size:20px;">Uy tín và Chuyên nghiệp</p>
+			<p style="font-weight: bold; font-size:50px;">Các Dịch Vụ Khác</p>
+			<p style="border-bottom: 5px solid green; margin: auto; width: 80px;"></p>
+			<p style="padding: 5px 30px; margin-bottom: 50px;">Với định hướng phát triển đa ngành nghề, ngoài lĩnh vực sân Golf, Công ty TNHH LANI&DANI còn tập trung các hoạt động kinh doanh trong các lĩnh vực dưới đây</p>
+		</span>
+		<span class="otherService">
+			<span class="building">
+				<span id="houses">
+					<img src="images/##">
+					<span style="font-size: 15px; line-height: 2px;">Xây dựng nhà ở</span>
+				</span>
+				<span id="factories">
+					<img src="images/##">
+					<span style="font-size: 15px; line-height: 2px;">Xây dựng các công trình kỹ thuật dàn dựng</span>
+				</span>
+				<span id="destroy">
+					<img src="images/##">
+					<span style="font-size: 15px; line-height: 2px;">Phá dỡ</span>
+				</span>
+				<span id="installment">
+					<img src="images/##">
+					<span style="font-size: 15px; line-height: 2px;">Lắp đặt hệ thống điện, cấp thoát nước, sưởi và điều hòa không khí</span>
+				</span>
+			</span>
+			<span class="sales">
+				<span id="design">
+					<img src="images/##">
+					<span style=" font-size: 15px; line-height: 2px;">hoạt động thiết kế chuyên dụng và tư vấn kỹ thuật liên quan</span>
+				</span>
+				<span id="discuss">
+					<img src="images/##">
+					<span style="font-size: 15px; line-height: 2px;">Tư vấn môi giới, đấu giá bất động sản, đấu giá quyền sử dụng đất</span>
+				</span>
+				<span id="customerCares">
+					<img src="images/##">
+					<span style="font-size: 15px; line-height: 2px;">Dịch vụ chăm sóc và duy trì cảnh quan</span>
+				</span>
+				<span id="salesOfDevices">
+					<img src="images/##">
+					<span style="font-size: 15px; line-height: 2px;">Bán buôn máy móc, thiết bị, phụ tùng máy</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<!-- Block 5 -->
+	<div class="section_5">
+		<!-- Your HTML code -->
+		<span class="advertise">
+			<img src="images/Consultant.png">
+			<p style="font-size: 30px;"> Bạn đang cần tư vấn?</p>
+			<p>Đừng ngần ngại, hãy liên hệ ngay với LaniDani để được tư vấn hoàn toàn miễn phí và báo giá tốt nhất giành riêng cho bạn.</p>
+		</span>
+		<span class="form">
+			<input type="text" name="name" placeholder="Tên của bạn">
+			<input type="text" name="email" placeholder="Email của bạn" >
+			<input type="text" name="phonenumber" placeholder="Số điện thoại" >
+			<textarea rows="10" cols="70" placeholder="Nội dung"></textarea>
+			<input type="submit" name="send" value="GỬI">
+		</span>
+	</div>
+	<!-- Block 6 -->
+	<div class="section_6">
+		<!-- Your HTML code -->
+		<span align="left">
+			<p style="color: darkgreen; font-weight: bold;">Cập nhật hằng ngày</p>
+			<p style="font-weight: bold; font-size:50px;">Tin Tức - Hoạt Động</p>
+			<p style="border-bottom: 5px solid green; width: 80px;"></p>
+		</span>
+		<span class="news">
+			<span id="news_1">
+				<img src="images/empty.png">
+				<p class="type_golf">GIẢI ĐẤU GOLF</p>
+				<p>Những lưu ý quan trọng trong cách chọn giày golf cho nam</p>
+				<p>Tháng Mười 28, 2020</p>
+				<p style="border-bottom: 5px solid lightgrey; margin-left:0 ; width: 80px;"></p>
+				<p>Theo chân các golfer nam ra sân đó chính là đôi giày. Làm thế nào để có đôi giày mang êm chân trong suốt 4-5 giờ và tạo ra sự [...]</p>
+				<span style="align:justify-content;border: 2px solid green; color:green;"><a href="###" style="color:green; text-decoration-line: none;">CHI TIẾT</a></span>
+			</span>
+			<span id="news_2">
+				<img src="images/empty.png">
+				<p class="type_golf">KỸ THUẬT GOLF</p>
+				<p>Cách chọn kính chơi golf để bảo vệ mắt tốt nhất</p>
+				<p>Tháng Mười 28, 2020</p>
+				<p style="border-bottom: 5px solid lightgrey; margin-left:0 ; width: 80px;"></p>
+				<p>Bên cạnh những chiếc mũ golf, kinh chơi golf là phụ kiện không thể thiếu cho các golfer trong những ngày nắng nóng, nhiệt lượng cao</p>
+				<span style="align:justify-content;border: 2px solid green; color:green;"><a href="###" style="color:green; text-decoration-line: none;">CHI TIẾT</a></span>
+			</span>
+			<span id="news_3">
+				<span>
+					<img src="images/empty.png">
+					<span id="subNews_1">
+						<p class="type_golf">TƯ VẤN GOLF</p>
+						<p>Golf Course là gì? Có bao nhiêu loại Golf Course?</p>
+						<p style="border-bottom: 5px solid lightgrey; margin-left:0 ; width: 50px;"></p>
+					</span>
+				</span>
+				<span>
+					<img src="images/empty.png">
+					<span id="subNews_2">
+						<p class="type_golf">GIẢI ĐẤU GOLF</p>
+						<p>Cách cấm tee golf đơn giản giúp golfer đánh bóng hiệu quả nhất</p>
+						<p style="border-bottom: 5px solid lightgrey; margin-left:0 ; width: 50px;"></p>
+					</span>
+				</span>
+				<span>
+					<img src="images/empty.png">
+					<span id="subNews_3">
+						<p class="type_golf">KỸ THUẬT GOLF</p>
+						<p>Điểm Hole in One trong golf có nghĩa là gì</p>
+						<p style="border-bottom: 5px solid lightgrey; margin-left:0 ; width: 50px;"></p>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="endPage">
+		<!-- Block 7 -->
+		<div class="section_7">
+			<img src="images/logo.png">
+			<p align="justify">Lani & Dani là công ty hoạt động đa ngành, đa lĩnh vực, với chủ lực là thiết kế đầu tư sân golf, quy hoạch cụm dân cư, khu đô thị, khu đô thị mới hoàn chỉnh.</p>
+		</div>
+
+		<!-- Block 8 -->
+		<div class="section_8">
+			<p style="font-weight: bolder; text-transform: uppercase;">liên hệ</p>
+			<p style="border-bottom: 3px solid lightgrey; margin-left:0 ; width:30px;"></p>
+			<p>
+				Địa chỉ<br>
+				202 Nguyễn Văn Hưởng, P.Thảo Điền, TP. Thủ Đức, TP. HCM <br><br>
+				Điện thoại<br>
+				0989 368 880<br><br>
+				Email<br>
+				info@lanidani.com
+			</p>
+		</div>
+
+		<!-- Block 9 -->
+		<div class="section_9">
+			<p style="font-weight: bolder; text-transform: uppercase;">tin tức</p>
+			<p style="border-bottom: 3px solid lightgrey; margin-left:0 ; width:30px;"></p>
+			<ul class="nav_news" type="circle">
+				<li class="nav_news_item">Kỹ thuật Golf</li>
+				<li class="nav_news_item">Giải đấu Golf</li>
+				<li class="nav_news_item">Tư vấn Golf</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Block 10 -->
+	<div class="section_10">
+		<!-- Your HTML code -->
+		<span>Copyright 2021 @ LANI & DANI Company</span>
+	</div>
+
+</body>
+</html>
